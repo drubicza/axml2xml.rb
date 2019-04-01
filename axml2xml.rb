@@ -39,6 +39,7 @@ data = nil
 begin
   require 'zip/zip'
   begin
+    Zip.warn_invalid_date = false
     Zip::ZipFile.foreach(ARGV[0]) do |f|
       if f.name.match(/AndroidManifest.xml/)
         data = f.get_input_stream.read
