@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-
 DEBUG = true
 
 END_DOC_TAG = 0x00100101
